@@ -1,12 +1,12 @@
 spring:
   config:
     activate:
-      on-profile : local
+      on-profile : default
   application:
     name: everyone
   datasource:
     driverClassName: org.h2.Driver
-    url: jdbc:h2:mem:member;MODE=MySQL
+    url: jdbc:h2:mem:everyone;
     username: sa
     password: ''
   #        hikari:
@@ -58,7 +58,7 @@ spring:
     name: everyone
     datasource:
       driverClassName: org.h2.Driver
-      url: jdbc:h2:mem:member;MODE=MySQL
+      url: jdbc:h2:mem:everyone
       username: sa
       password: ''
     #        hikari:
